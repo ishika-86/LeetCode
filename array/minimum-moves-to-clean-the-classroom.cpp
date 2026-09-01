@@ -26,7 +26,7 @@ public:
         int fullMask = masks - 1;
 
         // best[r][c][mask] = max energy reached at this state
-        vector<vector<vector<int>>> best
+        vector<vector<vector<int>>> best;
         best.resize(m,vector<vector<int>>(n,vector<int>(masks,-1)));
 
         struct State {
